@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".ui.AddFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:minHeight="?attr/minTouchTargetSize"
+        android:orientation="vertical"
+
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/header_size"
+            android:background="?attr/colorPrimaryVariant"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/button_cover"
+                android:layout_width="168dp"
+                android:layout_height="168dp"
+                android:background="@drawable/plus"
+                android:fontFamily="@font/montserrat"
+                android:textSize="16dp"
+                app:backgroundTint="?attr/colorPrimary"
+                android:scaleType="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?attr/colorPrimary"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <Button
+                android:id="@+id/button_upload_beat"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/button1"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/upload_beat"
+                android:textSize="16dp"
+                app:backgroundTint="?attr/colorPrimaryVariant" />
+
+            <EditText
+                android:id="@+id/edit_title"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/edit_text"
+                android:ems="10"
+                android:fontFamily="@font/montserrat"
+                android:hint="@string/title"
+                android:inputType="text"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:textSize="16dp" />
+
+            <EditText
+                android:id="@+id/edit_description"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/edit_text"
+                android:ems="10"
+                android:fontFamily="@font/montserrat"
+                android:hint="@string/description"
+                android:inputType="textMultiLine"
+                android:lines="3"
+                android:minLines="3"
+                android:gravity="top|start"
+                android:maxLines="3"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:paddingTop="10dp"
+                android:paddingLeft="30dp"
+                android:paddingBottom="10dp"
+                android:paddingRight="30dp"
+                android:textSize="16dp"
+/>
+
+            <Button
+                android:id="@+id/button_submit"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/button1"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/save"
+                android:textSize="16dp"
+                app:backgroundTint="?attr/colorPrimaryVariant"  />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

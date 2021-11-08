@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/colorPrimary">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:minHeight="?attr/minTouchTargetSize"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/header_size"
+                android:background="?attr/colorPrimary"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/button_avatar"
+                    android:layout_width="168dp"
+                    android:layout_height="168dp"
+                    android:layout_margin="12dp"
+                    android:background="@drawable/plus"
+                    app:backgroundTint="?attr/colorPrimaryVariant"
+                    android:scaleType="center"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="12dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="30dp"
+                        android:fontFamily="@font/montserrat"
+                        android:textSize="16dp"
+                        android:textColor="?attr/colorPrimaryVariant"
+                        android:text="Change your avatar"
+                        android:gravity="top|center_horizontal"
+                        />
+
+                    <Button
+                        android:id="@+id/button_save_avatar"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/button1"
+                        android:fontFamily="@font/montserrat"
+                        android:text="@string/save"
+                        android:textColor="?attr/colorOnPrimary"
+                        android:textSize="16dp"
+                        app:backgroundTint="?attr/colorPrimaryVariant" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?attr/colorPrimaryVariant"
+                android:minHeight="?attr/minTouchTargetSize"
+                android:orientation="vertical"
+                tools:ignore="MissingConstraints">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="20dp"
+                    android:fontFamily="@font/montserrat"
+                    android:gravity="top|center_horizontal"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp"
+                    android:text="Change your login"
+                    android:textColor="?attr/colorOnPrimary"
+                    android:textSize="16dp"
+                    />
+
+
+                <EditText
+                    android:id="@+id/edit_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/edit_text"
+                    android:ems="10"
+                    android:fontFamily="@font/montserrat"
+                    android:hint="@string/login"
+                    android:inputType="text"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp"
+                    android:textSize="16dp" />
+
+                <Button
+                    android:id="@+id/button_save_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/button1"
+                    android:fontFamily="@font/montserrat"
+                    android:text="@string/save"
+                    android:textColor="?attr/colorPrimaryVariant"
+                    android:textSize="16dp"
+                    app:backgroundTint="?attr/colorPrimary" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?attr/colorPrimary"
+                android:orientation="vertical"
+                tools:ignore="MissingConstraints">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:fontFamily="@font/montserrat"
+                    android:gravity="top|center_horizontal"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp"
+                    android:text="Add social media"
+                    android:textColor="?attr/colorPrimaryVariant"
+                    android:textSize="16dp" />
+
+
+
+                <EditText
+                    android:id="@+id/edit_vk"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/edit_text"
+                    android:ems="10"
+                    android:fontFamily="@font/montserrat"
+                    android:hint="Vk"
+                    android:inputType="text"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/edit_inst"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/edit_text"
+                    android:ems="10"
+                    android:fontFamily="@font/montserrat"
+                    android:hint="Instaram"
+                    android:inputType="text"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/edit_yt"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/edit_text"
+                    android:ems="10"
+                    android:fontFamily="@font/montserrat"
+                    android:hint="YouTube"
+                    android:inputType="text"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp"
+                    android:textSize="16dp"/>
+
+                <Button
+                    android:id="@+id/button_save_social"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/button1"
+                    android:fontFamily="@font/montserrat"
+                    android:text="@string/save"
+                    android:textColor="?attr/colorOnPrimary"
+                    android:textSize="16dp"
+                    app:backgroundTint="?attr/colorPrimaryVariant" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

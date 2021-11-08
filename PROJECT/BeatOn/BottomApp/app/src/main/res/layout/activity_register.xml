@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorPrimary"
+    android:paddingTop="100dp"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/edit_reg_email"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/edit_text"
+        android:ems="10"
+        android:fontFamily="@font/montserrat"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:textSize="16dp"
+        />
+
+    <EditText
+        android:id="@+id/edit_reg_login"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/edit_text"
+        android:ems="10"
+        android:fontFamily="@font/montserrat"
+        android:hint="@string/login"
+        android:inputType="textPersonName"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:textSize="16dp" />
+
+    <EditText
+        android:id="@+id/edit_reg_pass"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/edit_text"
+        android:ems="10"
+        android:fontFamily="@font/montserrat"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:textSize="16dp"
+        />
+
+
+
+    <Button
+        android:id="@+id/reg_button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/button1"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/register_upper"
+        android:textColor="?attr/colorOnPrimary"
+        android:textSize="16dp"
+        app:backgroundTint="?attr/colorPrimaryVariant" />
+
+    <Button
+        android:id="@+id/to_login"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/to_login"
+        android:textSize="16dp"
+        android:fontFamily="@font/montserrat"
+        android:textColor="?attr/colorPrimaryVariant"
+        android:visibility="visible"
+        />
+
+</LinearLayout>

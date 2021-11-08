@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RegLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorPrimary"
+    android:paddingTop="50dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/edit_log_email"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:background="@drawable/logo"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center"
+        />
+
+
+    <Button
+        android:id="@+id/reg_button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:background="@drawable/button1"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/register_upper"
+        android:textColor="?attr/colorOnPrimary"
+        android:textSize="16dp"
+        app:backgroundTint="?attr/colorPrimaryVariant"  />
+
+    <Button
+        android:id="@+id/log_button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:background="@drawable/button1"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/log_in_upper"
+        android:textColor="?attr/colorOnPrimary"
+        android:textSize="16dp"
+        app:backgroundTint="?attr/colorPrimaryVariant"  />
+
+</LinearLayout>
